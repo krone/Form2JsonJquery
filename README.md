@@ -21,29 +21,56 @@ form-nested-item="item"
 Example:-
 
 ```html
-        <table>
-          <tr>
-            <th>Type</th>
-            <th>Name</th>
-            <th>Age</th>
-          </tr>
-          <tr form-nested-item="son">
-            <td><input type="textfield" name="relationship" value="son"></td>
-            <td><input type="textfield" name="name" value="William Smith"></td>
-            <td><input type="textfield" name="age" value="5"></td>
-          </tr>
-          <tr form-nested-item="son">
-            <td><input type="textfield" name="relationship" value="son"></td>
-            <td><input type="textfield" name="name" value="Sam Smith"></td>
-            <td><input type="textfield" name="age" value="8"></td>
-          </tr>    
-          <tr form-nested-item="daughter">
-            <td><input type="textfield" name="relationship" value="daughter"></td>
-            <td><input type="textfield" name="name" value="Elena Smith"></td>
-            <td><input type="textfield" name="age" value="10"></td>
-          </tr>                               
-        </table>  
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr form-nested-item="son">
+    <td><input type="textfield" name="relationship" value="son"></td>
+    <td><input type="textfield" name="name" value="William Smith"></td>
+    <td><input type="textfield" name="age" value="5"></td>
+  </tr>
+  <tr form-nested-item="son">
+    <td><input type="textfield" name="relationship" value="son"></td>
+    <td><input type="textfield" name="name" value="Sam Smith"></td>
+    <td><input type="textfield" name="age" value="8"></td>
+  </tr>    
+  <tr form-nested-item="daughter">
+    <td><input type="textfield" name="relationship" value="daughter"></td>
+    <td><input type="textfield" name="name" value="Elena Smith"></td>
+    <td><input type="textfield" name="age" value="10"></td>
+  </tr>                               
+</table>  
 ```
 
 
- 
+Output:-
+
+```javascript
+
+{
+    "husband": "Mr Smith",
+    "wife": "Mrs Smith",
+    "son": [
+        {
+            "relationship": "son",
+            "name": "William Smith",
+            "age": "5"
+        },
+        {
+            "relationship": "son",
+            "name": "Sam Smith",
+            "age": "8"
+        }
+    ],
+    "daughter": [
+        {
+            "relationship": "daughter",
+            "name": "Elena Smith",
+            "age": "10"
+        }
+    ]
+}
+```
