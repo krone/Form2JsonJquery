@@ -3,6 +3,9 @@ Form2JsonJquery
 
 Form to JSON Object using Jquery
 
+
+Getting started
+---------------
 Usage:-
 
 <pre>
@@ -17,7 +20,7 @@ form-nested-item="item"
 
 Example:-
 
-<pre>
+```html
         <table>
           <tr>
             <th>Type</th>
@@ -40,7 +43,7 @@ Example:-
             <td><input type="textfield" name="age" value="10"></td>
           </tr>                               
         </table>  
-</pre>
+```
 
 
  
