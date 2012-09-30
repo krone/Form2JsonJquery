@@ -1,7 +1,7 @@
 Form2JsonJquery
 ===============
 
-Form to JSON Object using Jquery
+Form inputs to JSON Object using Jquery. Only does one level down.
 
 
 Getting started
